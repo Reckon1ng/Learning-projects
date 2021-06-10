@@ -1,0 +1,17 @@
+#note this isn't fully finished
+
+print("Welcome to the sorting algorithm")
+i = input("Enter the number of values you're sorting")
+c = 0
+v = []
+
+if int(i) != int() or int(i) < 1:
+    print("Please retry and enter an integer value")
+else:
+    while c < int(i):
+        x = (input("Enter numbers"))
+        v.append(x)
+        c = c + 1
+    print(sorted(v))
+
+#enter integers and it'll sort the entire list.
