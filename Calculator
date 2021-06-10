@@ -1,0 +1,31 @@
+import numpy
+
+o = False
+t = []
+while o == False:
+    i = input("Input numbers or press C to stop inputting ")
+    if i == "c":
+        o == True
+        break
+    n=int(i)
+    if n == int(i):
+        t.append(n)
+
+print("Enter A to add")
+print("Enter S to subtract")
+print("Enter M to multiply")
+print("Enter D to divide")
+choice = input("Enter your choice ")
+
+if choice == "a":
+    total = sum(t)
+    print(total)
+elif choice == "s":
+    total = numpy.subtract(t,int(input("Enter number to subtract by (note: it will subtract each value entered separately)")))
+    print(total)
+elif choice == "m":
+    total = numpy.prod(t)
+    print(total)
+elif choice == "d":
+    total = numpy.divide(t,int(input("Enter number to divide by (note: it will divide each value entered separately)")))
+    print(total)
