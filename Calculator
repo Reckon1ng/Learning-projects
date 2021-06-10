@@ -16,6 +16,7 @@ print("Enter S to subtract")
 print("Enter M to multiply")
 print("Enter D to divide")
 choice = input("Enter your choice ")
+#note the code generally glitches if a space is added before the numbers
 
 if choice == "a":
     total = sum(t)
